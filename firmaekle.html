@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="img/site-icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fa/css/all.css">
+    <link rel="stylesheet" href="css/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap&subset=latin-ext"
+          rel="stylesheet">
+    <title>İşyerimBurada | isyerimburada.com</title>
+</head>
+<body>
+<!--navbar-->
+<div class="row sticky-top" style="background-color: #F5DD01">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="index.html" class="navbar-brand"><img class="img-1" src="img/isyerim-logo.png" alt=""></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarRes"
+                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fas fa-bars" style="color:#000; border: black; font-size:28px;"></i></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarRes">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Anasayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sektorler.html">Sektörler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="iletisim.html">Bize Ulaşın</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+</div>
+<!--end navbar-->
+
+
+<br>
+
+<!--title-->
+<div class="row">
+    <div class="container">
+        <div class="row" style="background-color: #F5DD01; border-radius: .8rem; box-shadow: 3px 3px 3px 3px #DFDFDF,">
+            <div class="col-md-12">
+                <h1 class="text-center">Firma Ekle</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class=" w3-animate-opacity">
+<br>
+
+<!--Body-->
+<div class="row">
+    <div class="col-md-12">
+        <div class="container">
+            <!--Form-->
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="inputCompanyName">İşyerinizin Adı <span style="color: red">*</span></label>
+                        <input type="text" class="form-control" id="inputCompanyName"
+                               placeholder="İşyerinizin Adı">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4 col-lg-3">
+                        <label for="inputFirstName">Adınız <span style="color: red">*</span></label>
+                        <input type="text" class="form-control" id="inputFirstName" placeholder="Adınız">
+                    </div>
+                    <div class="form-group col-md-4 col-lg-3">
+                        <label for="inputLastName">Soyadınız <span style="color: red">*</span></label>
+                        <input type="text" class="form-control" id="inputLastName" placeholder="Soyadınız">
+                    </div>
+                    <div class="form-group col-md-3 col-lg-2">
+                        <label for="inputPhone">Telefon Numaranız <span style="color: red">*</span></label>
+                        <input type="tel" class="form-control" id="inputPhone" pattern="[0-9]{11}"
+                               placeholder="0555 555 55 55">
+                    </div>
+                    <div class="form-group col-md-1 col-lg-1">
+                        <label for="whatsapp" style="font-size: 15px">WhatsApp Aktif mi?</label>
+                        <input type="checkbox" class="form-check" id="whatsapp" name="whatsapp">
+                    </div>
+                    <div class="form-group col-md-4 col-lg-3">
+                        <label for="inputWebSite">Web Siteniz (varsa)</label>
+                        <input type="text" class="form-control" id="inputWebSite"
+                               placeholder="www.websitesi.com.tr">
+                    </div>
+                    <div class="form-group col-md-4 col-lg-6">
+                        <label for="inputAddress">Adresiniz <span style="color: red">*</span></label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="İşyerinizin Adresi">
+                    </div>
+                    <div class="form-group col-md-4 col-lg-6">
+                        <label for="inputEmail">E-Posta</label>
+                        <input type="email" class="form-control" id="inputEmail"
+                               placeholder="mail@domain.com.tr">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputFacebook"><i class="fab fa-facebook" style="color: #3B5998"></i> Facebook Kullanıcı Adınız</label>
+                        <input type="text" class="form-control" id="inputFacebook" placeholder="@kullaniciadi">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputInstagram"><i class="fab fa-instagram" style="color: black"></i> Instagram Kullanıcı Adınız</label>
+                        <input type="text" class="form-control" id="inputInstagram"
+                               placeholder="@kullaniciadi">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputTwitter"><i class="fab fa-twitter" style="color: #1A91DA"></i> Twitter Kullanıcı Adınız</label>
+                        <input type="text" class="form-control" id="inputTwitter"
+                               placeholder="@kullaniciadi">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputAboutCompany">İşletmeniz Hakkında <span style="color: red">*</span></label>
+                        <textarea name="about" id="inputAboutCompany" cols="30" class="form-control"
+                                  rows="5"></textarea>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputServiceDescription">İşletmenizin Hizmet Tanımı <span style="color: red">*</span></label>
+                        <textarea name="serviceDescription" id="inputServiceDescription" cols="30" class="form-control"
+                                  rows="5"></textarea>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputDepartment">Şube Bilgileriniz (varsa)</label>
+                        <textarea name="department" id="inputDepartment" cols="30" class="form-control"
+                                  rows="5"></textarea>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6 col-lg-3">
+                        <label for="photo1">Kapak Görseli Seçin <span style="color: red">*</span></label><br>
+                        <input type="file" name="coverPhoto" id="photo1">
+                    </div>
+                    <div class="form-group col-md-6 col-lg-3">
+                        <label for="photos">İşletmenize Ait Fotoğraflar</label><br>
+                        <input type="file" name="photos[]" id="photos" multiple>
+                    </div>
+                    <div class="form-group col-md-12 col-lg-6">
+                        <label for="inputDescription">Ek Açıklama (varsa)</label>
+                        <textarea name="description" id="inputDescription" cols="30" class="form-control"
+                                  rows="5"></textarea>
+                    </div>
+                </div>
+                <h6 style="color: red">* işaretli bölümler zorunludur...</h6>
+                <a class="btn btn-light">Firma Ekle</a>
+            </form>
+            <!--end form-->
+        </div>
+    </div>
+</div>
+<!--End Body-->
+
+<br><br><br>
+
+<!--footer -->
+    <footer class="footer-area" style="background-color: #333333; color: white">
+        <br>
+        <div class="footer-big">
+            <!-- start .container -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-lg-3">
+                        <div class="footer-widget">
+                            <div class="widget-about">
+                                <a href="index.html"><img src="img/isyerim-logo.png" alt="" class="img-fluid"></a>
+                                <br><br>
+                                <ul class="contact-details">
+                                    <li>
+                                        <i class="fas fa-phone-alt"></i>
+                                        <a href="tel:+908508852807">+90 850 885 28 07</a>
+                                    </li>
+                                    <li>
+                                        <span class="fas fa-mail-bulk"></span>
+                                        <a href="mailto:info@isyerimburada.com">info@isyerimburada.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Ends: .footer-widget -->
+                    </div>
+                    <!-- end /.col-md-4 -->
+                    <div class="col-md-6 col-sm-4 col-lg-3">
+                        <div class="footer-widget">
+                            <div class="footer-menu footer-menu--1">
+                                <h4 class="footer-widget-title tc">Popüler Aramalar</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">Çiçekçiler</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Kuyumcular</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Sanayi</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Hastaneler</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Nakliye</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end /.footer-menu -->
+                        </div>
+                        <!-- Ends: .footer-widget -->
+                    </div>
+                    <!-- end /.col-md-3 -->
+
+                    <div class="col-md-6 col-sm-4 col-lg-3">
+                        <div class="footer-widget">
+                            <div class="footer-menu">
+                                <h4 class="footer-widget-title tc">Our Company</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Hakkımızda</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Gizlilik Prensipleri ve Üyelik Koşulları</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Yasal Uyarılar</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Teslimat ve İade</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">S.S.S.</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">İletişim</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end /.footer-menu -->
+                        </div>
+                        <!-- Ends: .footer-widget -->
+                    </div>
+                    <!-- end /.col-lg-3 -->
+
+                    <div class="col-md-6 col-sm-4 col-lg-3">
+                        <div class="footer-widget">
+                            <div class="footer-menu no-padding tc">
+                                <h4 class="footer-widget-title">Sosyal Medya Hesaplarımız</h4>
+                                <div class="row row-cols-4">
+                                    <div class="col">
+                                        <a href="#"><i class="fab fa-facebook"></i></a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end /.footer-menu -->
+                        </div>
+                        <!-- Ends: .footer-widget -->
+                    </div>
+                    <!-- Ends: .col-lg-3 -->
+
+                </div>
+                <!-- end /.row -->
+            </div>
+            <!-- end /.container -->
+        </div>
+        <!-- end /.footer-big -->
+
+        <div class="mini-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="copyright-text text-center">
+                            <p>© 2019-2020
+                                <a href="index.html">isyerimburada.com</a>.
+                                Tüm Hakları Saklıdır.
+                                <a href="https://morelmedya.com">Morel Medya</a> kuruluşudur.
+                            </p>
+                        </div>
+
+                        <div class="go_top">
+                            <span class="icon-arrow-up"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!--end footer -->
+</div>
+<script src="js/jquery-3.4.1.slim.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/popper.min.js"></script>
+</body>
+</html>

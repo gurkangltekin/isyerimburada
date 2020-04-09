@@ -1,0 +1,15 @@
+.footer-area  a{
+    color: white;
+}
+.footer-area  a:hover{
+    color: #F5DD01;
+}
+
+.footer-area .col i{
+    font-size: 40px;
+}
+@media (max-width: 575px){
+    .tc {
+        text-align: center !important
+    }
+}

@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="img/site-icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fa/css/all.css">
+    <link rel="stylesheet" href="css/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap&subset=latin-ext"
+          rel="stylesheet">
+    <title>İşyerimBurada | isyerimburada.com</title>
+
+    <style>
+        .progress-bar {
+            width: 0;
+            animation: progress 2s ease-in-out forwards;
+
+        .title {
+            opacity: 0;
+            animation: show 0.35s forwards ease-in-out 0.5s;
+        }
+
+        }
+
+        @keyframes progress {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes show {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .progress-c {
+            width: 150px;
+            height: 150px;
+            line-height: 150px;
+            background: none;
+            margin: 0 auto;
+            box-shadow: none;
+            position: relative;
+        }
+
+        .progress-c:after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 12px solid #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .progress-c > span {
+            width: 50%;
+            height: 100%;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+        }
+
+        .progress-c .progress-c-left {
+            left: 0;
+        }
+
+        .progress-c .progress-c-bar {
+            width: 100%;
+            height: 100%;
+            background: none;
+            border-width: 12px;
+            border-style: solid;
+            position: absolute;
+            top: 0;
+        }
+
+        .progress-c .progress-c-left .progress-c-bar {
+            left: 100%;
+            border-top-right-radius: 80px;
+            border-bottom-right-radius: 80px;
+            border-left: 0;
+            -webkit-transform-origin: center left;
+            transform-origin: center left;
+        }
+
+        .progress-c .progress-c-right {
+            right: 0;
+        }
+
+        .progress-c .progress-c-right .progress-c-bar {
+            left: -100%;
+            border-top-left-radius: 80px;
+            border-bottom-left-radius: 80px;
+            border-right: 0;
+            -webkit-transform-origin: center right;
+            transform-origin: center right;
+            animation: loading-1 1.8s linear forwards;
+        }
+
+        .progress-c .progress-c-value {
+            width: 90%;
+            height: 90%;
+            border-radius: 50%;
+            background: #44484b;
+            font-size: 24px;
+            color: #fff;
+            line-height: 135px;
+            text-align: center;
+            position: absolute;
+            top: 5%;
+            left: 5%;
+        }
+
+        .progress-c.blue .progress-c-bar {
+            border-color: #049dff;
+        }
+
+        .progress-c.blue .progress-c-left .progress-c-bar {
+            animation: loading-2 1.5s linear forwards 1.8s;
+        }
+
+        .progress-c.yellow .progress-c-bar {
+            border-color: #fdba04;
+        }
+
+        .progress-c.yellow .progress-c-left .progress-c-bar {
+            animation: loading-3 1s linear forwards 1.8s;
+        }
+
+        .progress-c.pink .progress-c-bar {
+            border-color: #ed687c;
+        }
+
+        .progress-c.pink .progress-c-left .progress-c-bar {
+            animation: loading-4 0.4s linear forwards 1.8s;
+        }
+
+        .progress-c.green .progress-c-bar {
+            border-color: #1abc9c;
+        }
+
+        .progress-c.green .progress-c-left .progress-c-bar {
+            animation: loading-5 1.2s linear forwards 1.8s;
+        }
+
+        @keyframes loading-1 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+            }
+        }
+
+        @keyframes loading-2 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(144deg);
+                transform: rotate(144deg);
+            }
+        }
+
+        @keyframes loading-3 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+            }
+        }
+
+        @keyframes loading-4 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(36deg);
+                transform: rotate(36deg);
+            }
+        }
+
+        @keyframes loading-5 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(126deg);
+                transform: rotate(126deg);
+            }
+        }
+
+        @media only screen and (max-width: 990px) {
+            .progress-c {
+                margin-bottom: 20px;
+            }
+        }
+
+        .footer-area  a{
+            color: white;
+        }
+        .footer-area  a:hover{
+            color: #F5DD01;
+        }
+
+        .footer-area .col i{
+            font-size: 40px;
+        }
+        @media (max-width: 575px){
+            .tc {
+                text-align: center !important
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="mobirise-icons/mobirise-icons.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/mbr-additional.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+</head>
+<body>
+<!--navbar-->
+<div class="row sticky-top" style="background-color: #F5DD01">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="index.html" class="navbar-brand"><img class="img-1" src="img/isyerim-logo.png" alt=""></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarRes"
+                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fas fa-bars" style="color:#000; border: black; font-size:28px;"></i></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarRes">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Anasayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sektorler.html">Sektörler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="iletisim.html">Bize Ulaşın</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+</div>
+<!--end navbar-->
+
+<br>
+<!--company add-->
+<div class="row">
+    <div class="container">
+        <a class="btn btn" href="firmaekle.html" style="background-color: #F5DD01; float: right;">Firmanı Ekle <i
+                class="fas fa-arrow-right"></i></a>
+    </div>
+</div>
+
+<br>
+
+<!--title-->
+<div class="row">
+    <div class="container">
+        <div class="row" style="background-color: #F5DD01; border-radius: .8rem; box-shadow: 3px 3px 3px 3px #DFDFDF,">
+            <div class="col-md-12">
+                <h1 class="text-center">Hakkımızda</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class=" w3-animate-opacity">
+    <!--Body-->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="container">
+                <div class="row">
+                    <section class="progress-bars2 cid-qpgFh34U4x" id="progress-bars2-2e" data-rv-view="7742">
+
+
+                        <div class="container">
+                            <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">
+                                Horizontal progress bars with text block
+                            </h2>
+
+                            <h3 class="mbr-section-subtitle mbr-fonts-style display-5">
+                                Click blue "Gear" icon in the top right corner to hide/show progress bars and change
+                                them color and
+                                value. Click any text to edit or style it.
+                            </h3>
+
+                            <div class="row pt-5 mt-5">
+                                <div class="col-md-6 text-elements">
+                                    <h4 class="section-content-title pb-3 align-left mbr-fonts-style display-5">
+                                        A modular approach
+                                    </h4>
+                                    <p class="section-content-text align-left mbr-fonts-style display-7">
+                                        Make your own website in a few clicks! Mobirise helps you cut down development
+                                        time by
+                                        providing you with a flexible website editor with a drag and drop interface.
+                                        Mobirise
+                                        Website Builder creates responsive, retina and mobile friendly websites in a few
+                                        clicks.
+                                        Mobirise is one of the easiest website development tools available today. It
+                                        also gives you
+                                        the freedom to develop as many websites as you like given the fact that it is a
+                                        desktop app.
+                                    </p>
+                                    <p class="section-content-text align-left mbr-fonts-style display-7">
+                                        Make your own website in a few clicks! Mobirise helps you cut down development
+                                        time by
+                                        providing you with a flexible website editor with a drag and drop interface.
+                                        Mobirise
+                                        Website Builder creates responsive, retina and mobile friendly websites in a few
+                                        clicks.
+                                        Mobirise is one of the easiest website development tools available today. It
+                                        also gives you
+                                        the freedom to develop as many websites as you like given the fact that it is a
+                                        desktop app.
+                                    </p>
+                                </div>
+                                <div class="progress_elements col-md-6">
+                                    <div class="progress1 pb-5">
+                                        <div class="title-wrap">
+                                            <div class="progressbar-title mbr-fonts-style display-7">
+                                                <p>
+                                                    Amenity
+                                                </p>
+                                            </div>
+                                            <div class="progress_value mbr-fonts-style display-7">
+                                                <div class="progressbar-number">
+                                                </div>
+                                                <span>%60</span>
+                                            </div>
+                                        </div>
+                                        <div style="width: 100%;">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                                                     aria-valuemin="0"
+                                                     aria-valuemax="100" style="max-width: 60%">
+                                                    <span class="title">60%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="progress2 pb-5">
+                                        <div class="title-wrap">
+                                            <div class="progressbar-title mbr-fonts-style display-7">
+                                                <p>
+                                                    Public transport
+                                                </p>
+                                            </div>
+                                            <div class="progress_value mbr-fonts-style display-7">
+                                                <div class="progressbar-number">
+                                                </div>
+                                                <span>90%</span>
+                                            </div>
+                                        </div>
+                                        <div style="width: 100%;">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                                                     aria-valuemin="0"
+                                                     aria-valuemax="100" style="max-width: 90%">
+                                                    <span class="title">90%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="progress3 pb-5">
+                                        <div class="title-wrap">
+                                            <div class="progressbar-title mbr-fonts-style display-7">
+                                                <p>
+                                                    Nightlife
+                                                </p>
+                                            </div>
+                                            <div class="progress_value mbr-fonts-style display-7">
+                                                <div class="progressbar-number">
+                                                </div>
+                                                <span>50%</span>
+                                            </div>
+                                        </div>
+                                        <div style="width: 100%;">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                                                     aria-valuemin="0"
+                                                     aria-valuemax="100" style="max-width: 50%">
+                                                    <span class="title">50%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="progress-c blue">
+                <span class="progress-c-left">
+                    <span class="progress-c-bar"></span>
+                </span>
+                                <span class="progress-c-right">
+                    <span class="progress-c-bar"></span>
+                </span>
+                                <div class="progress-c-value">90%</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="progress-c yellow">
+                <span class="progress-c-left">
+                    <span class="progress-c-bar"></span>
+                </span>
+                                <span class="progress-c-right">
+                    <span class="progress-c-bar"></span>
+                </span>
+                                <div class="progress-c-value">75%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Body-->
+</div>
+
+
+<div class="row" style="background-color: #F0F0F0">
+    <div class="container-fluid">
+        <h1 class="text-center">Neden Bizi Seçmelisiniz?</h1>
+        <div class="row">
+            <div id="timeline">
+                <div class="row timeline-movement">
+                    <div class="timeline-badge center-left"><i class="mbri-lock" style="color: black"></i>
+                    </div>
+                    <div class="col-sm-6  timeline-item">
+                        <div class="row">
+                            <div class="col-sm-11">
+                                <div class="timeline-panel credits anim animate fadeInLeft">
+                                    <ul class="timeline-panel-ul">
+                                        <li><a href="#" class="importo">Güvenilir</a></li>
+                                        <li><span class="causale"
+                                                  style="color:#000; font-weight: 600;">Developer </span></li>
+                                        <li><span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row timeline-movement">
+                    <div class="timeline-badge center-right">
+                        <i class="far fa-user" style="color: black"></i>
+                    </div>
+                    <div class="offset-sm-6 col-sm-6  timeline-item">
+                        <div class="row">
+                            <div class="offset-sm-1 col-sm-11">
+                                <div class="timeline-panel debits  anim animate  fadeInRight">
+                                    <ul class="timeline-panel-ul">
+                                        <li><a href="#" class="importo">Mussum ipsum cacilds</a></li>
+                                        <li><span class="causale"
+                                                  style="color:#000; font-weight: 600;">Web Designer </span></li>
+                                        <li><span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row timeline-movement">
+                    <div class="timeline-badge center-left"><i class="mbri-lock" style="color: black"></i>
+                    </div>
+                    <div class="col-sm-6  timeline-item">
+                        <div class="row">
+                            <div class="col-sm-11">
+                                <div class="timeline-panel credits anim animate fadeInLeft">
+                                    <ul class="timeline-panel-ul">
+                                        <li><a href="#" class="importo">Güvenilir</a></li>
+                                        <li><span class="causale"
+                                                  style="color:#000; font-weight: 600;">Developer </span></li>
+                                        <li><span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row timeline-movement">
+                    <div class="timeline-badge center-right">
+                        <i class="far fa-user" style="color: black"></i>
+                    </div>
+                    <div class="offset-sm-6 col-sm-6  timeline-item">
+                        <div class="row">
+                            <div class="offset-sm-1 col-sm-11">
+                                <div class="timeline-panel debits  anim animate  fadeInRight">
+                                    <ul class="timeline-panel-ul">
+                                        <li><a href="#" class="importo">Mussum ipsum cacilds</a></li>
+                                        <li><span class="causale"
+                                                  style="color:#000; font-weight: 600;">Web Designer </span></li>
+                                        <li><span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row timeline-movement">
+                    <div class="timeline-badge center-left"><i class="mbri-lock" style="color: black"></i>
+                    </div>
+                    <div class="col-sm-6  timeline-item">
+                        <div class="row">
+                            <div class="col-sm-11">
+                                <div class="timeline-panel credits anim animate fadeInLeft">
+                                    <ul class="timeline-panel-ul">
+                                        <li><a href="#" class="importo">Güvenilir</a></li>
+                                        <li><span class="causale"
+                                                  style="color:#000; font-weight: 600;">Developer </span></li>
+                                        <li><span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row timeline-movement">
+                    <div class="timeline-badge center-right">
+                        <i class="far fa-user" style="color: black"></i>
+                    </div>
+                    <div class="offset-sm-6 col-sm-6  timeline-item">
+                        <div class="row">
+                            <div class="offset-sm-1 col-sm-11">
+                                <div class="timeline-panel debits  anim animate  fadeInRight">
+                                    <ul class="timeline-panel-ul">
+                                        <li><a href="#" class="importo">Mussum ipsum cacilds</a></li>
+                                        <li><span class="causale"
+                                                  style="color:#000; font-weight: 600;">Web Designer </span></li>
+                                        <li><span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+
+<!--footer -->
+<footer class="footer-area" style="background-color: #333333; color: white">
+    <br>
+    <div class="footer-big">
+        <!-- start .container -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-lg-3">
+                    <div class="footer-widget">
+                        <div class="widget-about">
+                            <a href="index.html"><img src="img/isyerim-logo.png" alt="" class="img-fluid"></a>
+                            <br><br>
+                            <ul class="contact-details">
+                                <li>
+                                    <i class="fas fa-phone-alt"></i>
+                                    <a href="tel:+908508852807">+90 850 885 28 07</a>
+                                </li>
+                                <li>
+                                    <span class="fas fa-mail-bulk"></span>
+                                    <a href="mailto:info@isyerimburada.com">info@isyerimburada.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Ends: .footer-widget -->
+                </div>
+                <!-- end /.col-md-4 -->
+                <div class="col-md-6 col-sm-4 col-lg-3">
+                    <div class="footer-widget">
+                        <div class="footer-menu footer-menu--1">
+                            <h4 class="footer-widget-title tc">Popüler Aramalar</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Çiçekçiler</a>
+                                </li>
+                                <li>
+                                    <a href="#">Kuyumcular</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sanayi</a>
+                                </li>
+                                <li>
+                                    <a href="#">Hastaneler</a>
+                                </li>
+                                <li>
+                                    <a href="#">Nakliye</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end /.footer-menu -->
+                    </div>
+                    <!-- Ends: .footer-widget -->
+                </div>
+                <!-- end /.col-md-3 -->
+
+                <div class="col-md-6 col-sm-4 col-lg-3">
+                    <div class="footer-widget">
+                        <div class="footer-menu">
+                            <h4 class="footer-widget-title tc">Our Company</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Hakkımızda</a>
+                                </li>
+                                <li>
+                                    <a href="#">Gizlilik Prensipleri ve Üyelik Koşulları</a>
+                                </li>
+                                <li>
+                                    <a href="#">Yasal Uyarılar</a>
+                                </li>
+                                <li>
+                                    <a href="#">Teslimat ve İade</a>
+                                </li>
+                                <li>
+                                    <a href="#">S.S.S.</a>
+                                </li>
+                                <li>
+                                    <a href="#">İletişim</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end /.footer-menu -->
+                    </div>
+                    <!-- Ends: .footer-widget -->
+                </div>
+                <!-- end /.col-lg-3 -->
+
+                <div class="col-md-6 col-sm-4 col-lg-3">
+                    <div class="footer-widget">
+                        <div class="footer-menu no-padding tc">
+                            <h4 class="footer-widget-title">Sosyal Medya Hesaplarımız</h4>
+                            <div class="row row-cols-4">
+                                <div class="col">
+                                    <a href="#"><i class="fab fa-facebook"></i></a>
+                                </div>
+                                <div class="col">
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                                <div class="col">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+                                <div class="col">
+                                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end /.footer-menu -->
+                    </div>
+                    <!-- Ends: .footer-widget -->
+                </div>
+                <!-- Ends: .col-lg-3 -->
+
+            </div>
+            <!-- end /.row -->
+        </div>
+        <!-- end /.container -->
+    </div>
+    <!-- end /.footer-big -->
+
+    <div class="mini-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright-text text-center">
+                        <p>© 2019-2020
+                            <a href="index.html">isyerimburada.com</a>.
+                            Tüm Hakları Saklıdır.
+                            <a href="https://morelmedya.com">Morel Medya</a> kuruluşudur.
+                        </p>
+                    </div>
+
+                    <div class="go_top">
+                        <span class="icon-arrow-up"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--end footer -->
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script>
+    /**********************Scroll Animation "START"************************************/
+    $(document).ready(function () {
+        var $animation_elements = $('.anim');
+        var $window = $(window);
+
+        function check_if_in_view() {
+            var window_height = $window.height();
+            var window_top_position = $window.scrollTop();
+            var window_bottom_position = (window_top_position + window_height);
+
+            $.each($animation_elements, function () {
+                var $element = $(this);
+                var element_height = $element.outerHeight();
+                var element_top_position = $element.offset().top;
+                var element_bottom_position = (element_top_position + element_height);
+
+//check to see if this current container is within viewport
+                if ((element_bottom_position >= window_top_position) &&
+                    (element_top_position <= window_bottom_position)) {
+                    $element.addClass('animated');
+                } else {
+                    $element.removeClass('animated');
+                }
+            });
+        }
+
+        $window.on('scroll resize', check_if_in_view);
+        $window.trigger('scroll');
+    });
+    /**********************Scroll Animation "END"************************************/
+
+    /**********************Change color of center aligned animated content small Circle  "END"************************************/
+</script>
+
+<script>
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 0) {
+            progress - bar.addClass("show");
+        } else {
+            progress - bar.removeClass("show");
+        }
+    });
+</script>
+
+
+<script src="js/jquery-3.4.1.slim.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/popper.min.js"></script>
+</body>
+</html>

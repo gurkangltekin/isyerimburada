@@ -1,0 +1,514 @@
+.navbar a {
+    color: black;
+}
+
+.navbar a:hover{
+    color: red;
+}
+.red a:hover{
+    color: red;
+}
+
+.row a{
+    color: black;
+}
+
+.col a:hover{
+    color: red;
+}
+
+.row{
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.card-body a{
+    color: black !important;
+    text-decoration: none !important;
+}
+
+.row navbar navbar-nav{
+    float: right !important;
+}
+.accordion button{
+    font-size: 30px;
+    color: black;
+}
+
+.blink {
+    animation: blinker 0.8s linear infinite;
+}
+@keyframes blinker {
+    50% { opacity: 0; }
+}
+
+/*alt sektörler*/
+
+.btn-outline-light{
+    box-shadow: 0 10px 10px -10px rgba(245, 221, 1, 2);
+}
+
+.btn-outline-light:hover{
+    background-color: #F5DD01 !important;
+    border-color: #F5DD01 !important;
+    box-shadow: 0 10px 10px -10px #000;
+}
+
+/*alt sektörler*/
+
+/*responsive firma*/
+.btn-outline-primary{
+    width: 100%;
+    background-color: #F5DD01 !important;
+    color: black !important;
+    border-radius: 1rem !important;
+}
+
+.btn-outline-primary:hover{
+    background-color: white !important;
+    color: black !important;
+    border-radius: 1rem;
+}
+
+.btn-dark{
+    width: 100%;
+}
+
+.btn-dark:hover{
+    background-color: white !important;
+    color: black !important;
+    border-radius: 1rem;
+}
+/*responsive firma*/
+
+/*firma ve sektorlerdeki hover efekti*/
+.card:hover{
+    box-shadow: 0 10px 10px -10px rgba(245, 221, 1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+
+}
+/*firma ve sektorlerdeki hover efekti*/
+
+/*burada arama kutusu sonuclarinin listelendigi cardlarin cssleri basliyor*/
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myUL li a {
+    border: 1px solid #ddd;
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: #eee;
+}
+/*burada arama kutusu sonuclarinin listelendigi cardlarin cssleri bitiyor
+ media bloklari icinde resultBoxlar kutucugun responsive ayari var!*/
+
+@media (min-width: 1200px) {
+    .resultBox{
+        margin-top: 10px;
+        margin-left: 120px;
+    }
+    ul.ex1 {
+        width: 810px;
+        height: 110px;
+        overflow: auto;
+    }
+}
+@media (max-width: 1200px){
+    .resultBox{
+        margin-top: 10px;
+        margin-left: 95px;
+    }
+    ul.ex1 {
+        width: 670px;
+        height: 110px;
+        overflow: auto;
+    }
+}
+@media (max-width: 1080px){
+    .resultBox{
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+    ul.ex1 {
+        width: 670px;
+        height: 110px;
+        overflow: auto;
+    }
+}
+@media (max-width: 991px){
+    .resultBox{
+        margin-top: 10px;
+        margin-left: 70px;
+    }
+    ul.ex1 {
+        width: 490px;
+        height: 110px;
+        overflow: auto;
+    }
+}
+@media (max-width: 768px){
+    .resultBox{
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    ul.ex1 {
+        width: 350px;
+        height: 110px;
+        overflow: auto;
+    }
+}
+@media (max-width: 480px){
+    .resultBox{
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    ul.ex1 {
+        width: 300px;
+        height: 110px;
+        overflow: auto;
+    }
+}
+
+@media (min-width: 768px){
+    .img-1{
+        width: 250px;
+    }
+    .hide-2{
+        display: none;
+    }
+}
+
+@media (max-width: 990px){
+    .a-font{
+        font-size: 15px !important;
+    }
+}
+@media (max-width: 768px){
+    .accordion button{
+        font-size: 22px;
+    }
+    .img-1{
+        width: 200px;
+    }
+    .h-size{
+        font-size: 22px;
+    }
+    .hide-1{
+        display: none;
+    }
+    .a-font{
+        font-size: 12px !important;
+    }
+}
+@media (max-width: 767px){
+    .hide{
+        display: none;
+    }
+}
+
+@media (max-width: 580px) {
+    .h-size{
+        font-size: 18px;
+    }
+    .a-font{
+        font-size: 10px !important;
+    }
+}
+@media (max-width: 480px){
+    .accordion button{
+        font-size: 15px;
+    }
+    .img-1{
+        width: 150px;
+    }
+    .h-size{
+        font-size: 15px;
+    }
+    .hide-3{
+        display: none;
+    }
+}
+@media (max-width: 575px){
+    .hidee{
+        display: none;
+    }
+}
+
+@media (max-width: 576px){
+    .hi{
+        display: none;
+    }
+}
+
+
+@media (max-width: 575px) and (min-width: 440px){
+    .accordion button{
+        font-size: 17px;
+    }
+}
+@media (max-width: 395px) and (min-width: 345px){
+    .accordion button{
+        font-size: 12px;
+    }
+}
+@media (max-width: 345px) {
+    .img-1{
+        width: 100px;
+    }
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+
+/**/
+
+.tabs-animated .nav-link {
+    position: relative;
+    padding: 1rem;
+    margin: 0 .75rem 0 0;
+    color: #495057
+}
+
+.tabs-animated .nav-link::before {
+    transform: scale(0);
+    opacity: 1;
+    width: 100%;
+    left: 0;
+    bottom: -2px;
+    content: "";
+    position: absolute;
+    display: block;
+    border-radius: .25rem;
+    background: #F5DD01;
+    transition: all .2s;
+    height: 4px
+}
+
+
+.tabs-animated .nav-link.active::before, .tabs-animated .nav-link:hover::before {
+    transform: scale(1);
+}
+
+.tabs-animated-shadow .nav-link {
+    padding: .5rem .75rem;
+    margin-bottom: .75rem;
+}
+
+.tabs-animated-shadow .nav-link span {
+    position: relative;
+    z-index: 5;
+    display: inline-block;
+    width: 100%
+}
+
+.tabs-animated-shadow .nav-link::before {
+    height: 100%;
+    top: 0;
+    z-index: 4;
+    bottom: auto;
+    box-shadow: 0 16px 26px -10px rgba(63, 106, 216, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(63, 106, 216, 0.2);
+    border-radius: 100%;
+    opacity: .5
+}
+
+.tabs-animated-shadow .nav-link.active::before, .tabs-animated-shadow .nav-link:hover::before {
+    border-radius: .25rem;
+    opacity: 1;
+}
+
+.btn-light{
+    background-color: #F0F0F0 !important;
+}
+.btn-light:hover{
+    background-color: #F5DD01 !important;
+}
+
+.btn-light-blog{
+    background-color: #F5DD01 !important;
+}
+.btn-light-blog:hover{
+    background-color: #F0F0F0 !important;
+}
+
+.page-link:hover{
+    background-color: #F5DD01 !important;
+}
+
+/*owl*/
+.owl-carousel, .owl-carousel .owl-item {
+    -webkit-tap-highlight-color: transparent;
+    position: relative
+}
+.owl-carousel {
+    display: none;
+    width: 100%;
+    z-index: 1
+}
+#demos .owl-carousel {
+    margin: 2rem 0
+}
+
+#demos .owl-carousel .item {
+    padding: 1rem
+}
+
+#demos .owl-carousel .item h4 {
+    color: #FFF;
+    font-weight: 400;
+    margin-top: 0rem
+}
+
+#demos .owl-carousel .item-video {
+    height: 300px
+}
+
+#demos #setup {
+    margin-top: 4rem
+}
+
+#demos .demo-list h5 {
+    margin: 0
+}
+
+.column, .columns {
+    padding-left: .9375rem;
+    padding-right: .9375rem;
+    width: 100%;
+    float: left
+}
+.owl-theme .owl-dots, .owl-theme .owl-nav {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent
+}
+
+.owl-theme .owl-nav {
+    margin-top: 10px
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #D6D6D6;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: #869791;
+    color: #FFF;
+    text-decoration: none
+}
+
+.owl-theme .owl-nav .disabled {
+    opacity: .5;
+    cursor: default
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 10px
+}
+
+.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: #D6D6D6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #869791
+}
+
+@media (max-width: 768px){
+    .large-12{
+        width: 768px;
+    }
+}
+
+@media only screen and (min-width: 64.0625em){
+    .column, .columns {
+        position: relative;
+        padding-left: .9375rem;
+        padding-right: .9375rem;
+        float: left
+    }
+
+    .large-12 {
+        width: 100%
+    }
+}
+
+@media only screen and (min-width: 40.0625em){
+    .column, .columns {
+        position: relative;
+        padding-left: .9375rem;
+        padding-right: .9375rem;
+        float: left
+    }
+}
+
+@media only screen{
+    .column, .columns {
+        position: relative;
+        padding-left: .9375rem;
+        padding-right: .9375rem;
+        float: left
+    }
+}
+
+
+
+.footer-area  a{
+    color: white;
+}
+.footer-area  a:hover{
+    color: #F5DD01;
+}
+
+.footer-area .col i{
+    font-size: 40px;
+}
+@media (max-width: 575px){
+    .tc {
+        text-align: center !important
+    }
+}

@@ -1,0 +1,47 @@
+/*alt sektörler*/
+
+.btn-outline-light{
+    box-shadow: 0 10px 10px -10px rgba(245, 221, 1, 2);
+}
+
+.btn-outline-light:hover{
+    background-color: #F5DD01 !important;
+    border-color: #F5DD01 !important;
+    box-shadow: 0 10px 10px -10px #000;
+}
+
+/*alt sektörler*/
+
+/*responsive firma*/
+.btn-outline-primary{
+    width: 100%;
+    background-color: #F5DD01 !important;
+    color: black !important;
+    border-radius: 1rem !important;
+}
+
+.btn-outline-primary:hover{
+    background-color: white !important;
+    color: black !important;
+    border-radius: 1rem;
+}
+
+.btn-dark{
+    width: 100%;
+}
+
+.btn-dark:hover{
+    background-color: white !important;
+    color: black !important;
+    border-radius: 1rem;
+}
+/*responsive firma*/
+
+/*firma ve sektorlerdeki hover efekti*/
+.card:hover{
+    box-shadow: 0 10px 10px -10px rgba(245, 221, 1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+
+}
+/*firma ve sektorlerdeki hover efekti*/
